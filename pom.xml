@@ -43,6 +43,8 @@
 		<module>eureka-server1</module>
 		<module>springcloud-provider1</module>
 		<module>springcloud-consumer1</module>
+		<module>springcloud-provider2</module>
+		<module>springcloud-provider3</module>
 	</modules>
 
 	<!-- 打包 -->
