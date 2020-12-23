@@ -1,0 +1,13 @@
+server:
+  port: 9999
+  
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "*"
+
+# Actuator默认只启动了 health 和 info 端点,如下配置打开全部端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
