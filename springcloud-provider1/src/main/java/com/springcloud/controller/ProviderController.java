@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProviderController {
 
 	@RequestMapping(path = "/getProvider", method = RequestMethod.GET)
-	public String getProvider() {
+	public String getProvider() throws Exception {
+		//throw new Exception("For Test");
 		return "Provider1";
 	}
 }

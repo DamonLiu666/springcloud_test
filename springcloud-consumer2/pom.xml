@@ -7,7 +7,7 @@
 		<artifactId>parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>springcloud-provider2</artifactId>
+	<artifactId>springcloud-consumer2</artifactId>
 	<packaging>jar</packaging>
 
 	<dependencies>
@@ -19,14 +19,22 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<!-- 
+			OpenFeign在Feign的基础上支持了Spring MVC的注解，如@RequesMapping等等。
+			OpenFeign的@FeignClient可以解析SpringMVC的@RequestMapping注解下的接口
+		 -->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.liferay</groupId>
 			<artifactId>org.apache.commons.configuration</artifactId>
 			<version>1.10.LIFERAY-PATCHED-2</version>
 		</dependency>
+		<dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
 	</dependencies>
 </project>

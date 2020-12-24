@@ -46,6 +46,7 @@
 		<module>springcloud-provider2</module>
 		<module>springcloud-provider3</module>
 		<module>springcloud-hystrix-dashboard</module>
+		<module>springcloud-consumer2</module>
 	</modules>
 
 	<!-- 打包 -->
