@@ -1,5 +1,9 @@
 server:
   port: 8092
+  
+spring:
+  application:
+    name: springcloud-consumer2
 
 # 开启Feign的Hystrix支持，默认是false  
 feign:

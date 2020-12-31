@@ -1,0 +1,16 @@
+server:
+  port: 10000
+  
+spring:
+  application:
+    name: springcloud-zuul
+    
+zuul:
+  routes:
+    springcloud-service:      #自定义的服务器名称
+      path: /springcloud-service/**   #通过这个路径从外部访问服务器
+      service-id: springcloud-consumer2      #路由需要访问的服务名
+  host:
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 60000
+  retryable: true
